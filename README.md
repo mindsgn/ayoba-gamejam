@@ -20,3 +20,8 @@ yarn
 yarn install
 
 ```
+
+```cli
+yarn start:dev
+
+```
