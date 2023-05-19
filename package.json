@@ -1,0 +1,9 @@
+{
+  "name": "game-hack",
+  "version": "1.0.0",
+  "description": "ayoba game jame",
+  "main": "index.js",
+  "repository": "git@github.com:mindsgn/ayoba-gamejam.git",
+  "author": "mindsgn <48827267+mindsgn@users.noreply.github.com>",
+  "license": "MIT"
+}
