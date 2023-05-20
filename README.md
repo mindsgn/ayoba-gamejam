@@ -1,4 +1,4 @@
-## Ayoba Hackerthon
+# Ayoba Hackerthon
 
 ## Getting started
 
@@ -25,3 +25,17 @@ yarn install
 yarn start:dev
 
 ```
+
+## Credits
+
+### Font
+
+Tiny Worlds - https://tinyworlds.itch.io/
+
+### Sound
+
+J.D. Wasabi - https://jdwasabi.itch.io/8-bit-16-bit-sound-effects-pack
+
+### Background
+
+Eder Munizz - https://edermunizz.itch.io/free-pixel-art-forest

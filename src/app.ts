@@ -27,6 +27,10 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/pages/index.html')
 })
 
+app.get('/credits', (req, res) => {
+    res.sendFile(__dirname + '/pages/credits.html')
+})
+
 app.listen(process.env.PORT, () => {
     return logger.info(
         `Express is listening at http://localhost:${process.env.PORT}`
