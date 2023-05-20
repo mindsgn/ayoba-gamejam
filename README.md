@@ -39,3 +39,7 @@ J.D. Wasabi - https://jdwasabi.itch.io/8-bit-16-bit-sound-effects-pack
 ### Background
 
 Eder Munizz - https://edermunizz.itch.io/free-pixel-art-forest
+
+### UI Buttons
+
+greatdocbrown - https://greatdocbrown.itch.io/gamepad-ui?download
