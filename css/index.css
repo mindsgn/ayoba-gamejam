@@ -1,0 +1,99 @@
+/*
+ * Global
+ */
+@font-face {
+  font-family: "pixel";
+  src: url("pixel.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  user-select: none;
+  color: white;
+  background: black;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  margin: 0px auto;
+  padding: 0px;
+  display: flex;
+  font-family: "pixel";
+  align-items: center;
+  justify-content: center;
+  overflow-y: none;
+  overflow-x: none;
+}
+
+p {
+  font-size: 2em;
+}
+
+h1 {
+  font-size: 8rem;
+  margin: 0px auto;
+  padding: 0px;
+}
+
+button {
+  font-family: "pixel";
+  background: none;
+  border: none;
+  color: white;
+  z-index: 2;
+  margin: 0px;
+  padding: 0px;
+  font-size: 4em;
+}
+
+canvas {
+}
+
+.paragraph {
+  max-width: 800px;
+}
+
+.blink {
+  animation: blink 1s linear infinite;
+}
+.story {
+  color: blue;
+}
+
+#game {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#gameover {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#btnPlay {
+  font-size: 10em;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
