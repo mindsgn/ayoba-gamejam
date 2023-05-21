@@ -48,6 +48,7 @@ button {
 }
 
 canvas {
+  padding: 4em;
 }
 
 .paragraph {
@@ -57,14 +58,23 @@ canvas {
 .blink {
   animation: blink 1s linear infinite;
 }
+
 .story {
   color: blue;
+}
+
+.ui {
+  position: fixed;
+  top: 0%;
+  font-size: 2em;
 }
 
 #game {
   display: none;
   align-items: center;
   justify-content: center;
+  background: url("../assets/background.png");
+  background-size: cover;
 }
 
 #gameover {

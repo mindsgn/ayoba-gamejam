@@ -7,6 +7,20 @@ document.getElementById("btnPlay").addEventListener("click", function () {
   sound.play();
 });
 
+let timeLeft = 30;
+
+function countdown() {
+  if (timeLeft === 0) {
+    gameover();
+  }
+
+  document.getElementById("timer").innerHTML = timeLeft + " seconds remaining";
+
+  timeLeft--;
+
+  setTimeout(countdown, 1000);
+}
+
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
 
@@ -58,19 +72,72 @@ var levels = [
     "x   o          xxx             xxx       x",
     "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
   ],
+  [
+    "x                                        x",
+    "x                                        x",
+    "x                                        x",
+    "x                                        x",
+    "x                                        x",
+    "x                                        x",
+    "x                                        x",
+    "x                                        x",
+    "x                O              e        x",
+    "x   o          xxx             xxx       x",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  ],
+  [
+    "x                                        x",
+    "x                                        x",
+    "x                                        x",
+    "x                                        x",
+    "x                                        x",
+    "x                                        x",
+    "x   xxx                o                 x",
+    "x                     xxx                x",
+    "x                               e        x",
+    "x   o          xxx             xxx       x",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  ],
+  [
+    "x                                        x",
+    "x                                        x",
+    "x                                        x",
+    "x                                        x",
+    "x                                        x",
+    "x    e                                   x",
+    "x   xxx                                  x",
+    "x                                        x",
+    "x                               O        x",
+    "x   o          xxx             xxx       x",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  ],
+  [
+    "x                                        x",
+    "x                                        x",
+    "x                                        x",
+    "x                                        x",
+    "x                                        x",
+    "x     e                                  x",
+    "x   xxx                                 Ox",
+    "x                                      xxx",
+    "x                                   xxxxxx",
+    "x   o          xxx             xxxxxxxxxxx",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  ],
 ];
 
 var player, blocks, projs, enemies, end, eblocks;
 
 function reset() {
+  countdown();
+  timeLeft = 30;
   if (lives < 0) {
-    lives = 7;
+    lives = 0;
     level = 0;
   }
   this.map = levels[level];
   if (this.map == null) {
     level = 0;
-    lives = 7;
     this.map = levels[level];
   }
   blocks = [];
